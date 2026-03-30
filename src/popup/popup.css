@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #111;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  color: #000000;
+  background: #ffff99;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ── Top black bar ── */
+
+.top-bar {
+  height: 18px;
+  background: #111;
+  flex-shrink: 0;
+}
+
+/* ── Red first line (search bar top border acts as red rule) ── */
+
+/* ── Search — red rule below acts as first line ── */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  border-top: 1px solid #cc2222;
+  border-bottom: 1px solid #cc2222;
+  flex-shrink: 0;
+  background: #ffff99;
+}
+
+
+.search-input {
+  flex: 1;
+  padding: 4px 10px;
+  border: 1px solid #b8b800;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: inherit;
+  color: #000;
+  background: #fffff4;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.search-input:focus {
+  border-color: #3366cc;
+}
+
+/* ── Notes list — filled with blue ruled lines ── */
+
+.notes-list {
+  height: 280px;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  background: #ffff99;
+  flex-shrink: 0;
+}
+
+.empty-row {
+  height: 28px;
+  border-bottom: 1px solid #3366cc;
+  scroll-snap-align: start;
+}
+
+/* ── Note card — blue ruled line at bottom of each row ── */
+
+.note-card {
+  position: relative;
+  height: 28px;
+  padding: 0 32px 0 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #ffff99;
+  border-bottom: 1px solid #3366cc;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.note-card:hover {
+  background: #f5f580;
+}
+
+.note-text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Delete button (per card) ── */
+
+.btn-delete {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #cc0000;
+  border: none;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+
+.btn-delete:hover {
+  background: #d93025;
+  color: #ffffff;
+}
+
+/* ── Bottom bar ── */
+
+.bottom-bar {
+  height: 28px;
+  background: #ffff99;
+  flex-shrink: 0;
+}
+
+/* ── Undo button ── */
+
+.btn-undo {
+  flex-shrink: 0;
+  padding: 4px 10px;
+  background: transparent;
+  color: #cc0000;
+  border: 1px solid #cc0000;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-undo:hover:not(:disabled) {
+  background: #cc0000;
+  color: #ffffff;
+}
+
+.btn-undo:disabled {
+  color: #b8b800;
+  border-color: #b8b800;
+  cursor: default;
+}

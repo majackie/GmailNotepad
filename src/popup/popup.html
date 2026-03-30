@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gmail Notepad</title>
+  <link rel="stylesheet" href="popup.css" />
+  <script defer src="../../src/shared/constants.js"></script>
+  <script defer src="../../src/content/storage.js"></script>
+  <script defer src="popup.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="top-bar"></div>
+    <div class="search-bar">
+      <input type="search" id="search-input" class="search-input" placeholder="Search…" aria-label="Search..." />
+      <button id="undo-btn" class="btn-undo" title="Undo last delete" disabled>Undo</button>
+    </div>
+    <main id="notes-list" class="notes-list" aria-label="Saved notes">
+    </main>
+    <div class="bottom-bar"></div>
+  </div>
+</body>
+
+</html>

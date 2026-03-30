@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <clipPath id="rounded">
+      <rect width="128" height="128" rx="16" ry="16"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <!-- Yellow body -->
+    <rect width="128" height="128" fill="#ffff99"/>
+
+    <!-- Black bar at top -->
+    <rect x="0" y="0" width="128" height="18" fill="#111111"/>
+
+    <!-- Red line -->
+    <rect x="0" y="38" width="128" height="1" fill="#cc2222"/>
+
+    <!-- Blue ruled lines — 5 equal rows from y=39 to y=128 (89px / 5 = ~18px each) -->
+    <rect x="0" y="57" width="128" height="1" fill="#3366cc"/>
+    <rect x="0" y="75" width="128" height="1" fill="#3366cc"/>
+    <rect x="0" y="93" width="128" height="1" fill="#3366cc"/>
+    <rect x="0" y="111" width="128" height="1" fill="#3366cc"/>
+
+    <!-- Text hints — centred within each row -->
+    <rect x="10" y="46" width="55" height="5" rx="2" fill="#33333366"/>
+    <rect x="10" y="64" width="80" height="5" rx="2" fill="#33333366"/>
+    <rect x="10" y="82" width="50" height="5" rx="2" fill="#33333366"/>
+    <rect x="10" y="100" width="70" height="5" rx="2" fill="#33333366"/>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+.gmailnotes-thread-area {
+  all: initial;
+  display: block;
+  width: 400px;
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 6px 0 12px 0;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.gmailnotes-label {
+  all: initial;
+  display: block;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #1a73e8;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+}
+
+.gmailnotes-textarea {
+  all: initial;
+  display: block;
+  width: 100%;
+  min-height: 72px;
+  max-height: 240px;
+  padding: 8px 10px;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #202124;
+  background: #f8f9fa;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  outline: none;
+  resize: vertical;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.gmailnotes-textarea:focus {
+  background: #ffffff;
+  border-color: #1a73e8;
+}
+
+.gmailnotes-textarea::placeholder {
+  color: #9aa0a6;
+}
+
+.gmailnotes-footer {
+  all: initial;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3px;
+  box-sizing: border-box;
+}
+
+.gmailnotes-status {
+  all: initial;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 11px;
+  color: #5f6368;
+}
+
+.gmailnotes-charcount {
+  all: initial;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 11px;
+  color: #9aa0a6;
+}
+
+.gmailnotes-list-note-inner {
+  display: inline-block;
+  width: auto;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 12px;
+  color: #202124;
+  background: #ffff88;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 6px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+}
+
